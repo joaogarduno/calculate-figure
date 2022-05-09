@@ -19,10 +19,10 @@ function areaCuadrado(lado){
 
 // ----------------------------------------
 
-// FUNCIONES DEL TRIÁNGULO
+// FUNCIONES DEL TRIÁNGULO EQUILATERO (NORMAL)
 
 // cálculo del Perímetro
-function perimetroTrianguloectangulo(lado1, lado2, base){
+function perimetroTriangulo(lado1, lado2, base){
     return lado1 + lado2 + base;
 }
 
@@ -37,14 +37,14 @@ function areaTriangulo(base, altura){
 // 
 const PI = Math.PI;
 function perimetroCirculo(){}
-function areCirculo(){}
+function areACirculo(){}
 
 // ----------------------------------------
 
 // FUNCIONES DEL TRIÁNGULO ISÓSCELES
 // 
-function perimetroCirculo(){}
-function areCirculo(){}
+// function perimetroTrianguloIso(){}
+// function areaTrianguloIso(){}
 
 
 // ----------------------------------------
@@ -56,6 +56,21 @@ function areCirculo(){}
 // ----------------------------------------
 
 // ---> CUADRADO
+
+// ÁREA CUADRADO
+function calcularAreaCuadrado(){
+    // Recibe y almacena valor de <input> de HTML
+    const input = document.getElementById("InputCuadrado");
+    const value = parseInt(input.value);
+
+    // Definición u operacion de área
+    const area = areaCuadrado(value);
+
+    // Resultado de la operación
+    const resultArea = document.getElementById("aResult");
+    // output
+    resultArea.innerHTML = area.toFixed(2) + " cm";
+}
 
 // PERÍMETRO CUADRADO
 function calcularPerimetroCuadrado(){
@@ -73,29 +88,17 @@ function calcularPerimetroCuadrado(){
     resultPeri.innerHTML = perimetro.toFixed(2) + " cm"
 }
 
-// ÁREA CUADRADO
-function calcularAreaCuadrado(){
-    // Recibe y almacena valor de <input> de HTML
-    const input = document.getElementById("InputCuadrado");
-    const value = parseInt(input.value);
-
-    // Definición u operacion de área
-    const area = areaCuadrado(value);
-
-    // Resultado de la operación
-    const resultArea = document.getElementById("aResult");
-    // output
-    resultArea.innerHTML = area.toFixed(2) + " cm";
-}
-
 
 
 // ----------------------------------------
 
 // ---> RECTANGULO
 
-// PERÍMETRO CUADRADO
 // ÁREA CUADRADO
+
+// PERÍMETRO CUADRADO
+
+
 
 
 
@@ -103,8 +106,42 @@ function calcularAreaCuadrado(){
 
 // ---> TRIÁNGULO EQUILATERO
 
-// PERÍMETRO TRIÁNGULO
 // ÁREA TRIÁNGULO
+function calcularAreaTriangulo(){
+    // Recibe y almacena datos
+    const inputBas = document.getElementById("inputBase");
+    const b = parseInt(inputBas.value);
+    const inputHeight = document.getElementById("inputAltura");
+    const h = parseInt(inputHeight.value);
+
+    // Procesar las datos recibidos y almacenados
+    const areaT = areaTriangulo(b, h);
+
+    // Regresar y mostrar resultado en HTML
+    const resultAreaT = document.getElementById("arResult");
+    resultAreaT.innerHTML = areaT.toFixed(2) + "cm";
+
+}
+
+// PERÍMETRO TRIÁNGULO
+function calcularPerimetroTriangulo(){
+    const inputSideA = document.getElementById("inputLadoA");
+    const sideA = parseInt(inputSideA.value);
+    const inputSideB =  document.getElementById("inputLadoB");
+    const sideB = parseInt(inputSideB.value);
+    const inputBas = document.getElementById("inputBase");
+    const b = parseInt(inputBas.value);
+    const inputHeight = document.getElementById("inputAltura");
+    const h = parseInt(inputHeight.value);
+    
+    // Definición Perímetro
+    const perimetroT = perimetroTriangulo(sideA, sideB, b);
+
+    // Regresar resultado a HTML
+    const resultPeriTri = document.getElementById("peResult");
+    resultPeriTri.innerHTML = perimetroT.toFixed(2) + " cm";
+
+}
 
 
 

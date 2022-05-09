@@ -12,10 +12,10 @@
     <header class="headerContent">
         <h1>Figuras Geometricas y sus calculos</h1>
     </header>
-    <!-- CUADRADO -->
+    <!-- SQUARE -->
     <section class="sectionContent">
         <div class="container">
-            <h2>Cuadrado</h2>
+            <h2>Square</h2>
 
             <!-- FORM CONTAINER -->
             <div class="form-container">
@@ -30,7 +30,6 @@
 
             <!-- RESULTS -->
             <div class="results">
-                <div class="result__frame"></div>
                 <div class="result__container">
                     <div class="result__content">
                         <p class="result__span">Area:</p>
@@ -45,10 +44,10 @@
         </div>
     </section>
 
-    <!-- RECTANGULO -->
+    <!-- RECTANGLE -->
     <section class="sectionContent">
         <div class="container">
-            <h2>Rectángulo</h2>
+            <h2>Rectangle</h2>
             <div class="form-container">
                 <form action="">
                     <label for="">¿Cuanto mide tu rectángulo?</label>
@@ -59,24 +58,64 @@
             </div>
         </div>
     </section>
-    <!-- TRIANGULO -->
+
+    <!-- TRIANGLE -->
     <section class="sectionContent">
         <div class="container">
-            <h2>Triángulo</h2>
+            <h2>Triangle</h2>
             <div class="form-container">
                 <form action="">
-                    <label for="">¿Cuanto mide tu triángulo?</label>
-                    <input id="InputTriangulo" class="inputClass" type="number">
-                    <button type="button" onclick="" class="btnInput">Calcular Perímetro</button>
-                    <button type="button" onclick="" class="btnInput">Calcular Área</button>
+                    <div class="form__inputs">
+                        <label for="">Lado 1</label>
+                        <div class="units">
+                            <input id="inputLadoA" class="inputClass" type="number">
+                        </div>
+                    </div>
+                    <div class="form__inputs">
+                        <label for="">Lado 2</label>
+                        <div class="units">
+                            <input id="inputLadoB" class="inputClass" type="number">
+                        </div>
+                    </div>
+                    <div class="form__inputs">
+                        <label for="">Base</label>
+                        <div class="units">
+                            <input id="inputBase" class="inputClass" type="number">
+                        </div>
+                    </div>
+                    <div class="form__inputs">
+                        <label for="">Altura</label>
+                        <div class="units">
+                            <input id="inputAltura" class="inputClass" type="number">
+                        </div>
+                    </div>
+                    
+                    <!-- BUTTON'S -->
+                    <button class="btnInput" type="button" onclick="calcularAreaTriangulo()">Calcular Área</button>
+                    <button class="btnInput" type="button" onclick="calcularPerimetroTriangulo()">Calcular Perímetro</button>
                 </form>
+            </div>
+
+            <!-- RESULTS -->
+            <div class="results">
+                <div class="result__container">
+                    <div class="result__content">
+                        <p class="result__span">Area:</p>
+                        <p id="arResult" class="result__text">0 cm</p>
+                    </div>
+                    <div class="result__content">
+                        <p class="result__span">Perimetro:</p>
+                        <p id="peResult" class="result__text">0 cm</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!-- CIRCULO -->
+    
+    <!-- CIRCLE -->
     <section class="sectionContent">
         <div class="container">
-            <h2>Círculo</h2>
+            <h2>Circle</h2>
             <div class="form-container">
                 <form action="">
                     <label for="">¿Cuanto mide tu Círculo?</label>
@@ -88,11 +127,11 @@
         </div>
     </section>
 
-    <!-- // RETO PENDIENTE -->
-    <!-- TRIANGULO ISÓSCELES -->
+    <!-- // PENDING CHALLENGE -->
+    <!-- ISOSCELES TRIANGLE -->
     <section class="sectionContent">
         <div class="container">
-            <h2>Triángulo Isósceles</h2>
+            <h2>Isosceles Triangle</h2>
             <div class="form-container">
                 <form action="">
                     <label for="">¿Cuanto mide tu triángulo isósceles?</label>
