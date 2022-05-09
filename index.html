@@ -16,16 +16,35 @@
     <section class="sectionContent">
         <div class="container">
             <h2>Cuadrado</h2>
+
+            <!-- FORM CONTAINER -->
             <div class="form-container">
                 <form action="">
                     <label for="">¿Cuanto mide tu cuadrado?</label>
                     <input id="InputCuadrado" class="inputClass" type="number">
-                    <button type="button" class="buttonInput">Calcular Perímetro</button>
-                    <button type="button" class="buttonInput">Calcular Área</button>
+                    <!-- BUTTONS -->
+                    <button type="button" onclick="calcularAreaCuadrado()" class="btnInput">Calcular Área</button>
+                    <button type="button" onclick="calcularPerimetroCuadrado()" class="btnInput">Calcular Perímetro</button>
                 </form>
+            </div>
+
+            <!-- RESULTS -->
+            <div class="results">
+                <div class="result__frame"></div>
+                <div class="result__container">
+                    <div class="result__content">
+                        <p class="result__span">Area:</p>
+                        <p id="aResult" class="result__text">0 cm</p>
+                    </div>
+                    <div class="result__content">
+                        <p class="result__span">Perimetro:</p>
+                        <p id="pResult" class="result__text">0 cm</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
     <!-- RECTANGULO -->
     <section class="sectionContent">
         <div class="container">
@@ -34,8 +53,8 @@
                 <form action="">
                     <label for="">¿Cuanto mide tu rectángulo?</label>
                     <input id="InputRectangulo" class="inputClass" type="number">
-                    <button type="button" class="buttonInput">Calcular Perímetro</button>
-                    <button type="button" class="buttonInput">Calcular Área</button>
+                    <button type="button" onclick="" class="btnInput">Calcular Perímetro</button>
+                    <button type="button" onclick="" class="btnInput">Calcular Área</button>
                 </form>
             </div>
         </div>
@@ -48,8 +67,8 @@
                 <form action="">
                     <label for="">¿Cuanto mide tu triángulo?</label>
                     <input id="InputTriangulo" class="inputClass" type="number">
-                    <button type="button" class="buttonInput">Calcular Perímetro</button>
-                    <button type="button" class="buttonInput">Calcular Área</button>
+                    <button type="button" onclick="" class="btnInput">Calcular Perímetro</button>
+                    <button type="button" onclick="" class="btnInput">Calcular Área</button>
                 </form>
             </div>
         </div>
@@ -62,8 +81,8 @@
                 <form action="">
                     <label for="">¿Cuanto mide tu Círculo?</label>
                     <input id="InputCirculo" class="inputClass" type="number">
-                    <button type="button" id="" class="buttonInput">Calcular Perímetro</button>
-                    <button type="button" class="buttonInput">Calcular Área</button>
+                    <button type="button" onclick="" class="btnInput">Calcular Perímetro</button>
+                    <button type="button" onclick="" class="btnInput">Calcular Área</button>
                 </form>
             </div>
         </div>
@@ -78,8 +97,8 @@
                 <form action="">
                     <label for="">¿Cuanto mide tu triángulo isósceles?</label>
                     <input id="InputIsosceles" class="inputClass" type="number">
-                    <button type="button" id="" class="buttonInput">Calcular Perímetro</button>
-                    <button type="button" class="buttonInput">Calcular Área</button>
+                    <button type="button" onclick="" class="btnInput">Calcular Perímetro</button>
+                    <button type="button" onclick="" class="btnInput">Calcular Área</button>
                 </form>
             </div>
         </div>
