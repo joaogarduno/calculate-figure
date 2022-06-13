@@ -10,139 +10,357 @@
 </head>
 <body>
     <header class="headerContent">
-        <h1>Figuras Geometricas y sus calculos</h1>
+        <div class="container">
+            <div class="header--title">
+                <h1 class="header--h1">Calculando el Área y el Perímetro de 5 Figuras Geometricas</h1>
+            </div>
+            <div class="header--info">
+                <p class="header--p">Descubre cual es el resultado de tu figura geometrica.</p>
+            </div>
+        </div>
     </header>
-    <!-- SQUARE -->
-    <section class="sectionContent">
-        <div class="container">
-            <h2>Square</h2>
+    <main class="mainContent">
 
-            <!-- FORM CONTAINER -->
-            <div class="form-container">
-                <form action="">
-                    <label for="">¿Cuanto mide tu cuadrado?</label>
-                    <input id="InputCuadrado" class="inputClass" type="number">
-                    <!-- BUTTONS -->
-                    <button type="button" onclick="calcularAreaCuadrado()" class="btnInput">Calcular Área</button>
-                    <button type="button" onclick="calcularPerimetroCuadrado()" class="btnInput">Calcular Perímetro</button>
-                </form>
-            </div>
+        <!-- SECTION - CUADRADO -->
+        <section class="sectionContent section--content">
+            <div class="container">
+                <article class="articleContent">
+                    <div class="row-container section--article__row">
+                        
+                        <div class="col-container section--article__col">
+                            <div class="article--titles">
+                                <h2>cuadrado</h2>
+                            </div>
+                            <figure class="article--figure">
+                                <img src="./assets/icons/square.svg" alt="">
+                            </figure>                       
+                        </div>
 
-            <!-- RESULTS -->
-            <div class="results">
-                <div class="result__container">
-                    <div class="result__content">
-                        <p class="result__span">Area:</p>
-                        <p id="aResult" class="result__text">0 cm</p>
-                    </div>
-                    <div class="result__content">
-                        <p class="result__span">Perimetro:</p>
-                        <p id="pResult" class="result__text">0 cm</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                        <div class="col-container">
+                            <div class="article--form">
+                                <form class="article--form__form" action="">
+                                    <div class="article--form__inlab">
+                                        <label for="InputCuadrado">¿cuál es la medida de tu cuadrado?</label>
+                                        <input id="InputCuadrado" class="inputClass" type="number">
+                                    </div>
 
-    <!-- RECTANGLE -->
-    <section class="sectionContent">
-        <div class="container">
-            <h2>Rectangle</h2>
-            <div class="form-container">
-                <form action="">
-                    <label for="">¿Cuanto mide tu rectángulo?</label>
-                    <input id="InputRectangulo" class="inputClass" type="number">
-                    <button type="button" onclick="" class="btnInput">Calcular Perímetro</button>
-                    <button type="button" onclick="" class="btnInput">Calcular Área</button>
-                </form>
-            </div>
-        </div>
-    </section>
+                                    <!-- BUTTON -->
+                                    <div class="article--form__buttons">
+                                        <button class="btnInput" onclick="calcularAreaCuadrado()" type="button">Calcular Área</button>
+                                        <button class="btnInput" onclick="calcularPerimetroCuadrado()" type="button">Calcular Perímetro</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
 
-    <!-- TRIANGLE -->
-    <section class="sectionContent">
-        <div class="container">
-            <h2>Triangle</h2>
-            <div class="form-container">
-                <form action="">
-                    <div class="form__inputs">
-                        <label for="">Lado 1</label>
-                        <div class="units">
-                            <input id="inputLadoA" class="inputClass" type="number">
+                        <!-- RESULT -->
+                        <div class="col-container">
+                            <div class="article--result">
+                                <div class="article--result--content">
+                                    <p class="result--span">
+                                        <span>Área:</span>
+                                    </p>
+                                    <p id="aResult" class="result--text">
+                                        <span>0 cm.</span>
+                                    </p>
+                                </div>
+                                <div class="article--result--content">
+                                    <p class="result--span">
+                                        <span>Perímetro:</span>
+                                    </p>
+                                    <p id="pResult" class="result--text">
+                                        <span>0 cm.</span>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="form__inputs">
-                        <label for="">Lado 2</label>
-                        <div class="units">
-                            <input id="inputLadoB" class="inputClass" type="number">
-                        </div>
-                    </div>
-                    <div class="form__inputs">
-                        <label for="">Base</label>
-                        <div class="units">
-                            <input id="inputBase" class="inputClass" type="number">
-                        </div>
-                    </div>
-                    <div class="form__inputs">
-                        <label for="">Altura</label>
-                        <div class="units">
-                            <input id="inputAltura" class="inputClass" type="number">
-                        </div>
-                    </div>
-                    
-                    <!-- BUTTON'S -->
-                    <button class="btnInput" type="button" onclick="calcularAreaTriangulo()">Calcular Área</button>
-                    <button class="btnInput" type="button" onclick="calcularPerimetroTriangulo()">Calcular Perímetro</button>
-                </form>
+                </article>
             </div>
+        </section>
 
-            <!-- RESULTS -->
-            <div class="results">
-                <div class="result__container">
-                    <div class="result__content">
-                        <p class="result__span">Area:</p>
-                        <p id="arResult" class="result__text">0 cm</p>
-                    </div>
-                    <div class="result__content">
-                        <p class="result__span">Perimetro:</p>
-                        <p id="peResult" class="result__text">0 cm</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- CIRCLE -->
-    <section class="sectionContent">
-        <div class="container">
-            <h2>Circle</h2>
-            <div class="form-container">
-                <form action="">
-                    <label for="">¿Cuanto mide tu Círculo?</label>
-                    <input id="InputCirculo" class="inputClass" type="number">
-                    <button type="button" onclick="" class="btnInput">Calcular Perímetro</button>
-                    <button type="button" onclick="" class="btnInput">Calcular Área</button>
-                </form>
-            </div>
-        </div>
-    </section>
+        <!-- SECTION CIRCULO -->
+        <section class="sectionContent section--content">
+            <div class="container">
+                <article class="articleContent">
+                    <div class="row-container section--article__row">
+                        
+                        <div class="col-container section--article__col">
+                            <div class="article--titles">
+                                <h2>círculo</h2>
+                            </div>
+                            <figure class="article--figure">
+                                <img src="./assets/icons/circle.svg" alt="">
+                            </figure>                       
+                        </div>
 
-    <!-- // PENDING CHALLENGE -->
-    <!-- ISOSCELES TRIANGLE -->
-    <section class="sectionContent">
-        <div class="container">
-            <h2>Isosceles Triangle</h2>
-            <div class="form-container">
-                <form action="">
-                    <label for="">¿Cuanto mide tu triángulo isósceles?</label>
-                    <input id="InputIsosceles" class="inputClass" type="number">
-                    <button type="button" onclick="" class="btnInput">Calcular Perímetro</button>
-                    <button type="button" onclick="" class="btnInput">Calcular Área</button>
-                </form>
+                        <div class="col-container">
+                            <div class="article--form">
+                                <form class="article--form__form" action="">
+                                    <div class="article--form__inlab">
+                                        <label for="InputCirculo">¿cuál es la medida de tu circulo?</label>
+                                        <input id="InputCirculo" class="inputClass" type="number">
+                                    </div>
+
+                                    <!-- BUTTON -->
+                                    <div class="article--form__buttons">
+                                        <button class="btnInput" onclick="calcularAreaCuadrado()" type="button">Calcular Área</button>
+                                        <button class="btnInput" onclick="calcularPerimetroCuadrado()" type="button">Calcular Perímetro</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- RESULT -->
+                        <div class="col-container">
+                            <div class="article--result">
+                                <div class="article--result--content">
+                                    <p class="result--span">
+                                        <span>Área:</span>
+                                    </p>
+                                    <p class="result--text">
+                                        <span>0 cm.</span>
+                                    </p>
+                                </div>
+                                <div class="article--result--content">
+                                    <p class="result--span">
+                                        <span>Perímetro:</span>
+                                    </p>
+                                    <p class="result--text">
+                                        <span>0 cm.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
             </div>
-        </div>
-    </section>
-    <!-- JS -->
+        </section>
+
+        <!-- SECTION - RECTANGULO -->
+        <section class="sectionContent section--content">
+            <div class="container">
+                <article class="articleContent">
+                    <div class="row-container section--article__row">
+                        
+                        <div class="col-container section--article__col">
+                            <div class="article--titles">
+                                <h2>rectángulo</h2>
+                            </div>
+                            <figure class="article--figure">
+                                <img src="./assets/icons/rectangle.svg" alt="">
+                            </figure>                       
+                        </div>
+
+                        <div class="col-container">
+                            <div class="article--form">
+                                <form class="article--form__form" action="">
+                                    <div class="article--form__inlab">
+                                        <label for="InputRectangulo">¿cuál es la medida de tu rectangulo?</label>
+                                        <input id="InputRectangulo" class="inputClass" type="number">
+                                    </div>
+
+                                    <!-- BUTTON -->
+                                    <div class="article--form__buttons">
+                                        <button class="btnInput" onclick="calcularAreaCuadrado()" type="button">Calcular Área</button>
+                                        <button class="btnInput" onclick="calcularPerimetroCuadrado()" type="button">Calcular Perímetro</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- RESULT -->
+                        <div class="col-container">
+                            <div class="article--result">
+                                <div class="article--result--content">
+                                    <p class="result--span">
+                                        <span>Área:</span>
+                                    </p>
+                                    <p class="result--text">
+                                        <span>0 cm.</span>
+                                    </p>
+                                </div>
+                                <div class="article--result--content">
+                                    <p class="result--span">
+                                        <span>Perímetro:</span>
+                                    </p>
+                                    <p class="result--text">
+                                        <span>0 cm.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECTION EQUILATERO -->
+        <section class="sectionContent section--content">
+            <div class="container">
+                <article class="articleContent">
+                    <div class="row-container section--article__row">
+                        
+                        <div class="col-container section--article__col">
+                            <div class="article--titles">
+                                <h2>equilátero</h2>
+                            </div>
+                            <figure class="article--figure">
+                                <img src="./assets/icons/triangle.svg" alt="">
+                            </figure>                       
+                        </div>
+
+                        <div class="col-container">
+                            <div class="article--form">
+                                <form class="article--form__form" action="">
+
+                                    <div class="form__inputs">
+                                        <label for="inputLadoA">Lado 1</label>
+                                        <div class="form--inputs__units">
+                                            <input id="InputLadoA" class="inputClass" type="number">
+                                        </div>
+                                    </div>
+
+                                    <div class="form__inputs">
+                                        <label for="inputLadoB">Lado 2</label>
+                                        <div class="form--inputs__units">
+                                            <input id="InputLadoB" class="inputClass" type="number">
+                                        </div>
+                                    </div>
+
+                                    <div class="form__inputs">
+                                        <label for="inputAltura">Altura</label>
+                                        <div class="form--inputs__units">
+                                            <input id="InputAltura" class="inputClass" type="number">
+                                        </div>
+                                    </div>
+
+                                    <div class="form__inputs">
+                                        <label for="inputBase">Base</label>
+                                        <div class="form--inputs__units">
+                                            <input id="inputBase" class="inputClass" type="number">
+                                        </div>
+                                    </div>
+
+                                    <!-- BUTTON -->
+                                    <div class="article--form__buttons">
+                                        <button class="btnInput" onclick="calcularAreaCuadrado()" type="button">Calcular Área</button>
+                                        <button class="btnInput" onclick="calcularPerimetroCuadrado()" type="button">Calcular Perímetro</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- RESULT -->
+                        <div class="col-container">
+                            <div class="article--result">
+                                <div class="article--result--content">
+                                    <p class="result--span">
+                                        <span>Área:</span>
+                                    </p>
+                                    <p class="result--text">
+                                        <span>0 cm.</span>
+                                    </p>
+                                </div>
+                                <div class="article--result--content">
+                                    <p class="result--span">
+                                        <span>Perímetro:</span>
+                                    </p>
+                                    <p class="result--text">
+                                        <span>0 cm.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECTION -ISOSCELES -->
+        <!-- SECTION EQUILATERO -->
+        <section class="sectionContent section--content">
+            <div class="container">
+                <article class="articleContent">
+                    <div class="row-container section--article__row">
+                        
+                        <div class="col-container section--article__col">
+                            <div class="article--titles">
+                                <h2>isosceles</h2>
+                            </div>
+                            <figure class="article--figure">
+                                <img src="./assets/icons/triangle.svg" alt="">
+                            </figure>                       
+                        </div>
+
+                        <div class="col-container">
+                            <div class="article--form">
+                                <form class="article--form__form" action="">
+
+                                    <div class="form__inputs">
+                                        <label for="inputLadoA">Lado 1</label>
+                                        <div class="form--inputs__units">
+                                            <input id="InputLadoA" class="inputClass" type="number">
+                                        </div>
+                                    </div>
+
+                                    <div class="form__inputs">
+                                        <label for="inputLadoB">Lado 2</label>
+                                        <div class="form--inputs__units">
+                                            <input id="InputLadoB" class="inputClass" type="number">
+                                        </div>
+                                    </div>
+
+                                    <div class="form__inputs">
+                                        <label for="inputAltura">Altura</label>
+                                        <div class="form--inputs__units">
+                                            <input id="InputAltura" class="inputClass" type="number">
+                                        </div>
+                                    </div>
+
+                                    <div class="form__inputs">
+                                        <label for="inputBase">Base</label>
+                                        <div class="form--inputs__units">
+                                            <input id="inputBase" class="inputClass" type="number">
+                                        </div>
+                                    </div>
+
+                                    <!-- BUTTON -->
+                                    <div class="article--form__buttons">
+                                        <button class="btnInput" onclick="calcularAreaCuadrado()" type="button">Calcular Área</button>
+                                        <button class="btnInput" onclick="calcularPerimetroCuadrado()" type="button">Calcular Perímetro</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- RESULT -->
+                        <div class="col-container">
+                            <div class="article--result">
+                                <div class="article--result--content">
+                                    <p class="result--span">
+                                        <span>Área:</span>
+                                    </p>
+                                    <p class="result--text">
+                                        <span>0 cm.</span>
+                                    </p>
+                                </div>
+                                <div class="article--result--content">
+                                    <p class="result--span">
+                                        <span>Perímetro:</span>
+                                    </p>
+                                    <p class="result--text">
+                                        <span>0 cm.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
     <script src="./js/app.js"></script>
 </body>
 </html>
